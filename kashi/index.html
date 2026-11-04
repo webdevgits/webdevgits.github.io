@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashi Traders | GeM Portal Vendor, Wholesale & Retail Supplies</title>
+    <meta name="description" content="Kashi Traders is a trusted GeM (Govt e-Marketplace) registered vendor, wholesale and retail supplier of computer peripherals, classroom furniture, whiteboards, and educational institute items.">
+    <meta name="keywords" content="Kashi Traders, GeM registered vendor, educational institute supplies, computer peripherals, classroom furniture, whiteboards, smart class equipment, school desks, wholesale computer accessories">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kashi Traders | GeM Portal, Wholesale & Retail Institutional Supplies">
+    <meta property="og:description" content="Complete supply solutions for Schools, Colleges, Universities, Government Offices & Businesses. GeM Certified, Wholesale Pricing & Retail Counter.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gem: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                            800: '#1e3a8a',
+                            900: '#0f172a'
+                        },
+                        accent: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c'
+                        },
+                        trust: {
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gem-600 selection:text-white">
+
+    <!-- TOP NOTIFICATION & CREDENTIAL BAR -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-3 flex-wrap justify-center">
+                <span class="inline-flex items-center gap-1.5 bg-emerald-950/80 text-emerald-400 border border-emerald-800/80 px-2 py-0.5 rounded font-semibold text-[11px]">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i> GeM Registered Vendor
+                </span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="text-slate-300">
+                    <i class="fa-solid fa-file-invoice text-amber-400 mr-1"></i> GST Compliant Invoicing
+                </span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="text-slate-300">
+                    <i class="fa-solid fa-truck-fast text-sky-400 mr-1"></i> Institutional Pan-India / State Supply
+                </span>
+            </div>
+            <div class="flex items-center space-x-4 text-[12px]">
+                <a href="tel:+919876543210" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-emerald-400"></i> +91 98765 43210
+                </a>
+                <a href="mailto:kashitraders.gem@gmail.com" class="hover:text-white transition flex items-center gap-1 hidden sm:flex">
+                    <i class="fa-solid fa-envelope text-sky-400"></i> kashitraders.gem@gmail.com
+                </a>
+                <button onclick="openGeMModal()" class="text-amber-400 hover:text-amber-300 font-medium underline underline-offset-2">
+                    Verify GeM Seller ID
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand / Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-gem-800 via-gem-700 to-accent-600 flex items-center justify-center text-white font-extrabold text-2xl shadow-md group-hover:scale-105 transition-transform duration-200">
+                        <span class="font-display">KT</span>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-2xl font-black font-display tracking-tight text-slate-900 group-hover:text-gem-700 transition">KASHI TRADERS</span>
+                        </div>
+                        <p class="text-[11px] font-semibold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                            <span>GeM Vendor</span>
+                            <span class="text-slate-300">•</span>
+                            <span>Wholesale</span>
+                            <span class="text-slate-300">•</span>
+                            <span>Retail</span>
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-6 text-[15px] font-medium text-slate-600">
+                    <a href="#home" class="hover:text-gem-700 py-1 transition border-b-2 border-transparent hover:border-gem-700">Home</a>
+                    <a href="#gem-section" class="hover:text-gem-700 py-1 transition flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        GeM Procurement
+                    </a>
+                    <a href="#categories" class="hover:text-gem-700 py-1 transition">Product Range</a>
+                    <a href="#catalog" class="hover:text-gem-700 py-1 transition">Catalog & Search</a>
+                    <a href="#bundles" class="hover:text-gem-700 py-1 transition">Institutional Bundles</a>
+                    <a href="#why-us" class="hover:text-gem-700 py-1 transition">Why Choose Us</a>
+                    <a href="#contact" class="hover:text-gem-700 py-1 transition">Contact</a>
+                </nav>
+
+                <!-- Actions / Cart / RFQ -->
+                <div class="flex items-center space-x-3">
+                    <!-- RFQ Cart Trigger -->
+                    <button id="rfq-badge-btn" onclick="openRFQDrawer()" class="relative p-2.5 rounded-lg text-slate-700 hover:text-gem-800 hover:bg-slate-100 transition focus:outline-none" title="View Quote Request">
+                        <i class="fa-solid fa-clipboard-list text-xl"></i>
+                        <span id="rfq-count" class="absolute -top-1 -right-1 bg-accent-600 text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+                    </button>
+
+                    <!-- Quote CTA Button -->
+                    <a href="#rfq-form-section" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-gem-700 to-gem-900 text-white text-sm font-semibold px-4 py-2.5 rounded-lg shadow-sm hover:shadow-md hover:from-gem-800 hover:to-slate-900 transition-all duration-200">
+                        <i class="fa-solid fa-file-signature text-amber-400"></i>
+                        <span>Request Quote</span>
+                    </a>
+
+                    <!-- Direct WhatsApp Quick Chat -->
+                    <a href="https://wa.me/919876543210?text=Hello%20Kashi%20Traders,%20I%20want%20to%20enquire%20about%20your%20products/GeM%20procurement" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 bg-emerald-600 text-white text-sm font-semibold px-3.5 py-2.5 rounded-lg hover:bg-emerald-700 transition shadow-sm" title="Chat on WhatsApp">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span class="hidden xl:inline">WhatsApp</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Menu Button -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Navigation">
+                        <i id="hamburger-icon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl transition-all">
+            <div class="flex flex-col space-y-3 font-medium text-slate-700">
+                <a href="#home" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700">Home</a>
+                <a href="#gem-section" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700 flex items-center justify-between">
+                    <span>GeM Procurement (Govt)</span>
+                    <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Active</span>
+                </a>
+                <a href="#categories" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700">Product Range</a>
+                <a href="#catalog" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700">Catalog & Search</a>
+                <a href="#bundles" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700">Institutional Bundles</a>
+                <a href="#why-us" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700">Why Choose Us</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="p-2 rounded hover:bg-slate-50 hover:text-gem-700">Contact & Address</a>
+                <div class="pt-2 flex flex-col gap-2">
+                    <a href="#rfq-form-section" onclick="toggleMobileMenu()" class="w-full text-center bg-gem-700 text-white font-semibold py-2.5 rounded-lg">
+                        <i class="fa-solid fa-file-pen mr-1 text-amber-300"></i> Request Price Quote
+                    </a>
+                    <a href="https://wa.me/919876543210?text=Hello%20Kashi%20Traders,%20I%20have%20an%20inquiry" target="_blank" class="w-full text-center bg-emerald-600 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-gem-900 to-slate-900 text-white pt-12 pb-20 lg:pt-16 lg:pb-28">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-gem-600/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-slate-800/90 border border-slate-700 text-slate-200 px-3.5 py-1.5 rounded-full text-xs font-medium">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400"></span>
+                        <span>Government e-Marketplace (GeM) Registered Seller</span>
+                        <span class="text-slate-400">•</span>
+                        <span class="text-amber-400">Wholesale & Retail</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-display tracking-tight leading-tight">
+                        Complete Supplies For <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-sky-400 via-amber-300 to-orange-400 bg-clip-text text-transparent">Educational Institutes</span> & Offices.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        <strong>Kashi Traders</strong> is your premier single-source partner for <strong>Computer Peripherals, Classroom Whiteboards, Lab Tables, Ergonomic Chairs, Smart Screens,</strong> and general institutional furnishings across Retail, Wholesale, and Direct GeM Portal Bids.
+                    </p>
+
+                    <!-- Trust Badges List -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                        <div class="flex items-center gap-2.5 bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-lg">
+                            <i class="fa-solid fa-landmark text-amber-400 text-lg"></i>
+                            <div>
+                                <p class="text-xs font-bold text-white leading-tight">GeM Bids & Direct</p>
+                                <p class="text-[11px] text-slate-400">L-1 & Custom BOQ</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-lg">
+                            <i class="fa-solid fa-boxes-stacked text-sky-400 text-lg"></i>
+                            <div>
+                                <p class="text-xs font-bold text-white leading-tight">Bulk Wholesale</p>
+                                <p class="text-[11px] text-slate-400">Tiered Volume Pricing</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-lg col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-store text-emerald-400 text-lg"></i>
+                            <div>
+                                <p class="text-xs font-bold text-white leading-tight">Retail Counter</p>
+                                <p class="text-[11px] text-slate-400">Direct Walk-in Supply</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to action buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#catalog" class="bg-gradient-to-r from-accent-600 to-amber-600 hover:from-accent-700 hover:to-amber-700 text-white px-6 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-amber-900/30 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explore Catalog</span>
+                        </a>
+                        <a href="#gem-section" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 px-6 py-3.5 rounded-xl font-semibold text-base transition flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                            <span>GeM Procurement Guide</span>
+                        </a>
+                        <button onclick="openRFQDrawer()" class="bg-gem-800/80 hover:bg-gem-700 text-sky-300 border border-sky-500/30 px-5 py-3.5 rounded-xl font-semibold text-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Instant RFQ</span>
+                        </button>
+                    </div>
+
+                    <!-- Key Stats Bar -->
+                    <div class="pt-6 border-t border-slate-800/80 flex items-center justify-center lg:justify-start gap-6 text-slate-300 text-xs sm:text-sm">
+                        <div>
+                            <span class="block text-xl font-extrabold text-white">500+</span>
+                            <span class="text-slate-400 text-xs">Schools & Colleges</span>
+                        </div>
+                        <div class="h-8 w-px bg-slate-800"></div>
+                        <div>
+                            <span class="block text-xl font-extrabold text-white">100%</span>
+                            <span class="text-slate-400 text-xs">GeM Compliance</span>
+                        </div>
+                        <div class="h-8 w-px bg-slate-800"></div>
+                        <div>
+                            <span class="block text-xl font-extrabold text-white">2,500+</span>
+                            <span class="text-slate-400 text-xs">Products Delivered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual / Interactive Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Glow effect -->
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-sky-500 via-amber-500 to-emerald-500 opacity-40 blur-lg"></div>
+
+                        <!-- Card Body -->
+                        <div class="relative bg-slate-900/90 border border-slate-700 rounded-2xl p-6 sm:p-7 shadow-2xl backdrop-blur-xl">
+                            <!-- Header with Badge -->
+                            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold">
+                                        <i class="fa-solid fa-award text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white font-bold text-sm">GeM Verified Supplier</h3>
+                                        <p class="text-[11px] text-slate-400">Kashi Traders • Authorized Vendor</p>
+                                    </div>
+                                </div>
+                                <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                                    Active Seller
+                                </span>
+                            </div>
+
+                            <!-- Showcase Vertical Icons -->
+                            <div class="py-5 space-y-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Fast Track Categories:</p>
+                                
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-slate-800/70 border border-slate-700/70 hover:border-sky-500/50 transition">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                                            <i class="fa-solid fa-desktop"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-white text-sm font-semibold">Computer & IT Peripherals</h4>
+                                            <p class="text-[11px] text-slate-400">CPUs, Printers, UPS, Keyboards, Routers</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-medium text-sky-400">In Stock</span>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-slate-800/70 border border-slate-700/70 hover:border-amber-500/50 transition">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+                                            <i class="fa-solid fa-chalkboard-user"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-white text-sm font-semibold">Educational Whiteboards & Boards</h4>
+                                            <p class="text-[11px] text-slate-400">Ceramic, Magnetic, Green, Display Boards</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-medium text-amber-400">Bulk Tier</span>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-slate-800/70 border border-slate-700/70 hover:border-emerald-500/50 transition">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                                            <i class="fa-solid fa-chair"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-white text-sm font-semibold">Campus & Office Furniture</h4>
+                                            <p class="text-[11px] text-slate-400">Dual Desks, Computer Tables, Mesh Chairs</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-medium text-emerald-400">GeM BOQ</span>
+                                </div>
+                            </div>
+
+                            <!-- Fast Action in Card -->
+                            <div class="pt-2">
+                                <div class="bg-gem-950/90 rounded-xl p-3.5 border border-gem-800/80 text-center">
+                                    <p class="text-xs text-slate-300 mb-2">Need a quotation for your school or tender?</p>
+                                    <div class="flex gap-2">
+                                        <a href="#rfq-form-section" class="flex-1 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-2 px-3 rounded-lg text-xs transition text-center">
+                                            Generate RFQ
+                                        </a>
+                                        <button onclick="openGeMModal()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-white font-medium py-2 px-3 rounded-lg text-xs border border-slate-600 transition">
+                                            GeM Vendor Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 BUSINESS PILLARS: GeM, Wholesale, Retail -->
+    <section class="py-14 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gem-700 font-bold text-xs uppercase tracking-widest bg-gem-50 border border-gem-200 px-3 py-1 rounded-full">
+                    Our Business Verticals
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display mt-3">
+                    Three Flexible Procurement Channels for Every Buyer
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    Whether you are a government procurement officer, a school principal ordering for 50 classrooms, or an individual buyer needing a single monitor, Kashi Traders has you covered.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1: GeM Portal -->
+                <div class="relative bg-gradient-to-b from-blue-50/50 to-white p-7 rounded-2xl border border-blue-200/80 shadow-sm hover:shadow-md transition group">
+                    <div class="w-14 h-14 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl mb-5 shadow-blue-500/20 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-landmark-flag"></i>
+                    </div>
+                    <div class="inline-block bg-blue-100 text-blue-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2">
+                        Government & Institutions
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 font-display mb-2">GeM Portal Supplies</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Direct procurement and bidding on the Government e-Marketplace. Fully compliant with GFR rules, customized catalog uploads, and L-1 price match support.
+                    </p>
+                    <ul class="text-xs space-y-2 text-slate-700 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Direct Purchase under ₹25k / ₹50k</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Custom Bid & BOQ Participation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Official Invoicing via GeM Portal</li>
+                    </ul>
+                    <a href="#gem-section" class="text-blue-700 font-bold text-sm flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                        <span>Learn GeM Process</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Pillar 2: Wholesale -->
+                <div class="relative bg-gradient-to-b from-amber-50/50 to-white p-7 rounded-2xl border border-amber-200/80 shadow-sm hover:shadow-md transition group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-600 text-white flex items-center justify-center text-2xl mb-5 shadow-amber-500/20 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <div class="inline-block bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2">
+                        Institutes & Commercial
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 font-display mb-2">Bulk Wholesale Supply</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Turnkey supply for Schools, Colleges, Coaching Centers, IT Labs, and Corporate Offices with substantial volume tier discounts and scheduled staggered deliveries.
+                    </p>
+                    <ul class="text-xs space-y-2 text-slate-700 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> Heavy Volume Discount Slabs</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> Complete Classroom & Lab Setup</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> On-site Unloading & Assembly</li>
+                    </ul>
+                    <a href="#rfq-form-section" class="text-amber-700 font-bold text-sm flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                        <span>Request Bulk Quotation</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Pillar 3: Retail Counter -->
+                <div class="relative bg-gradient-to-b from-emerald-50/50 to-white p-7 rounded-2xl border border-emerald-200/80 shadow-sm hover:shadow-md transition group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-2xl mb-5 shadow-emerald-500/20 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <div class="inline-block bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2">
+                        Individuals & Small Offices
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 font-display mb-2">Retail & Walk-in Store</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Direct walk-in store and fast pickup for individual teachers, students, small offices, and home setups requiring genuine brand peripherals, study tables, and chairs.
+                    </p>
+                    <ul class="text-xs space-y-2 text-slate-700 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Genuine Manufacturer Warranty</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Same-day Local Delivery/Pickup</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> GST Invoice on every purchase</li>
+                    </ul>
+                    <a href="#contact" class="text-emerald-700 font-bold text-sm flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                        <span>Visit Our Store</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GeM PROCUREMENT GUIDE & PORTAL CORNER -->
+    <section id="gem-section" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Info Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Government Buyers Corner</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-display">
+                        Procure Smoothly via <span class="text-amber-400">Government e-Marketplace (GeM)</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Are you a procurement officer, administrative head, or principal at a Kendriya Vidyalaya, Navodaya Vidyalaya, Government University, Polytechnic, or State Department? Kashi Traders facilitates seamless procurement with end-to-end GeM assistance.
+                    </p>
+
+                    <!-- Steps in GeM Procurement -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 bg-slate-800/80 border border-slate-700 p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-gem-600 text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Direct Purchase / L-1 Bidding</h4>
+                                <p class="text-xs text-slate-300">Place direct orders up to statutory limits, or initiate L-1 comparison across our listed catalog products.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-slate-800/80 border border-slate-700 p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-accent-600 text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Custom Bid & BOQ (Bill of Quantities)</h4>
+                                <p class="text-xs text-slate-300">Need specific custom specs for interactive panels, dual benches, or full computer labs? We assist with compliant BOQ creation.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-slate-800/80 border border-slate-700 p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">CRAC Generation & Prompt Dispatch</h4>
+                                <p class="text-xs text-slate-300">Fast on-site delivery, pre-dispatch inspections, warranty compliance, and smooth Consignee Receipt and Acceptance Certificate (CRAC) sign-off.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <button onclick="openGeMModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition flex items-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-id-card"></i>
+                            <span>View GeM Seller Credentials</span>
+                        </button>
+                        <a href="https://wa.me/919876543210?text=Hello%20Kashi%20Traders,%20we%20want%20to%20procure%20via%20GeM%20portal.%20Please%20share%20details." target="_blank" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 px-5 py-2.5 rounded-lg font-semibold text-sm transition flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>GeM Help Desk (Chat)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GeM Credential Card Preview -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-amber-500/40 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="absolute -top-3 right-6 bg-amber-500 text-slate-950 text-[11px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                            Official Vendor Info
+                        </div>
+                        
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gem-700 flex items-center justify-center text-white text-xl font-bold">
+                                KT
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-black text-white font-display">KASHI TRADERS</h3>
+                                <p class="text-xs text-slate-400">Government e-Marketplace Seller</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-xs">
+                            <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                                <span class="text-slate-400">Firm Category:</span>
+                                <span class="font-bold text-white">Reseller / Authorized Dealer</span>
+                            </div>
+
+                            <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                                <span class="text-slate-400">Primary Product Categories:</span>
+                                <span class="font-bold text-emerald-400 text-right">IT Hardware, Furniture, Educational Equipment</span>
+                            </div>
+
+                            <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                                <span class="text-slate-400">GeM Verified ID:</span>
+                                <div class="flex items-center gap-2">
+                                    <code class="font-mono text-amber-300 font-bold">KT-GEM-2024-X99</code>
+                                    <button onclick="copyToClipboard('KT-GEM-2024-X99')" class="text-slate-400 hover:text-white" title="Copy Seller ID">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                                <span class="text-slate-400">GST Registration:</span>
+                                <span class="font-bold text-white font-mono">09AAACK1234F1Z5</span>
+                            </div>
+
+                            <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                                <span class="text-slate-400">Delivery Capability:</span>
+                                <span class="font-bold text-sky-400">Statewide & Pan-India Dispatch</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-center">
+                            <p class="text-[11px] text-slate-400">
+                                <i class="fa-solid fa-lock text-emerald-400 mr-1"></i> Verified with MSME / Udyam & GST Portal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRODUCT CATEGORIES OVERVIEW -->
+    <section id="categories" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-gem-700 font-bold text-xs uppercase tracking-widest bg-gem-50 border border-gem-200 px-3 py-1 rounded-full">
+                    Complete Inventory
+                </span>
+                <h2 class="text-3xl font-extrabold text-slate-900 font-display mt-3">
+                    Featured Supply Categories
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    Everything you need to furnish classrooms, staff rooms, administration chambers, and cutting-edge computer labs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 font-display mb-1">Computer Peripherals & IT</h3>
+                    <p class="text-xs text-slate-500 mb-4">Complete desktop setups, high-capacity printers, online UPS, routers, mice, keyboards & surveillance.</p>
+                    <div class="border-t border-slate-100 pt-3">
+                        <span class="text-xs text-slate-500 font-medium">Popular: Multi-function Printers, 1KVA UPS, Optical Mice</span>
+                    </div>
+                    <button onclick="filterCatalog('computers')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-sky-50 text-sky-700 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5">
+                        <span>View IT Hardware</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-chalkboard"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 font-display mb-1">Classroom Whiteboards</h3>
+                    <p class="text-xs text-slate-500 mb-4">Magnetic ceramic whiteboards, chalk green boards, fabric pinup notice boards, flip charts & stands.</p>
+                    <div class="border-t border-slate-100 pt-3">
+                        <span class="text-xs text-slate-500 font-medium">Popular: 6x4 Ft Non-Glare Boards, Standee Whiteboards</span>
+                    </div>
+                    <button onclick="filterCatalog('boards')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-amber-50 text-amber-700 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5">
+                        <span>View Boards & Displays</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-chair"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 font-display mb-1">Tables & Campus Desks</h3>
+                    <p class="text-xs text-slate-500 mb-4">Heavy-duty dual student benches, computer lab modular tables, teacher podiums & executive office desks.</p>
+                    <div class="border-t border-slate-100 pt-3">
+                        <span class="text-xs text-slate-500 font-medium">Popular: Dual Desk With Shelf, Server/Lab Workstations</span>
+                    </div>
+                    <button onclick="filterCatalog('tables')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-indigo-50 text-indigo-700 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5">
+                        <span>View Tables & Desks</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 font-display mb-1">Chairs & Ergonomic Seating</h3>
+                    <p class="text-xs text-slate-500 mb-4">Breathable mesh revolving chairs, visitor chairs, training chairs with writing pads, and auditorium seating.</p>
+                    <div class="border-t border-slate-100 pt-3">
+                        <span class="text-xs text-slate-500 font-medium">Popular: High-Back Mesh Chairs, Study Chairs with Pad</span>
+                    </div>
+                    <button onclick="filterCatalog('chairs')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-emerald-50 text-emerald-700 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5">
+                        <span>View Chairs & Seating</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE PRODUCT CATALOG & INSTANT SEARCH -->
+    <section id="catalog" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+                <div>
+                    <span class="text-gem-700 font-bold text-xs uppercase tracking-widest bg-gem-50 border border-gem-200 px-3 py-1 rounded-full">
+                        Live Catalog
+                    </span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 font-display mt-2">
+                        Institutional & Business Supplies
+                    </h2>
+                    <p class="text-slate-600 text-sm mt-1">
+                        Browse items available for direct GeM bid mapping, bulk educational supply, or retail counter pickup.
+                    </p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="relative w-full md:w-80">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" id="catalog-search" oninput="handleCatalogSearch(this.value)" placeholder="Search whiteboard, chair, printer..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm bg-slate-50 focus:bg-white transition outline-none">
+                    <button id="search-clear-btn" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Categories Bar -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-none mb-8">
+                <button onclick="filterCatalog('all')" class="filter-tab active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition" data-category="all">
+                    All Products
+                </button>
+                <button onclick="filterCatalog('computers')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition" data-category="computers">
+                    <i class="fa-solid fa-desktop mr-1.5"></i> Computer Peripherals
+                </button>
+                <button onclick="filterCatalog('boards')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition" data-category="boards">
+                    <i class="fa-solid fa-chalkboard mr-1.5"></i> Whiteboards & Greenboards
+                </button>
+                <button onclick="filterCatalog('tables')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition" data-category="tables">
+                    <i class="fa-solid fa-table mr-1.5"></i> Tables & Dual Desks
+                </button>
+                <button onclick="filterCatalog('chairs')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition" data-category="chairs">
+                    <i class="fa-solid fa-chair mr-1.5"></i> Chairs & Seating
+                </button>
+                <button onclick="filterCatalog('smart-class')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition" data-category="smart-class">
+                    <i class="fa-solid fa-display mr-1.5"></i> Smart Class & Interactive
+                </button>
+            </div>
+
+            <!-- Product Cards Grid (Populated dynamically via JavaScript) -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Products injected by products.js / app.js -->
+            </div>
+
+            <!-- Empty State for Search -->
+            <div id="no-products" class="hidden text-center py-16">
+                <div class="w-16 h-16 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <h3 class="text-base font-bold text-slate-800">No matching products found</h3>
+                <p class="text-xs text-slate-500 max-w-sm mx-auto mt-1">We can source custom models, specific GeM specifications, and tender BOQs. Contact us directly.</p>
+                <button onclick="clearSearch()" class="mt-4 text-xs font-bold text-gem-700 underline">Reset Search & Show All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTITUTIONAL TURNKEY PACKAGES & LAB BUNDLES -->
+    <section id="bundles" class="py-16 bg-gradient-to-b from-slate-900 to-slate-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest bg-amber-400/10 border border-amber-400/20 px-3 py-1 rounded-full">
+                    Pre-Packaged Institutional Setups
+                </span>
+                <h2 class="text-3xl font-extrabold text-white font-display mt-3">
+                    Turnkey Solutions for Campuses & Labs
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">
+                    Save time and administrative effort with pre-engineered packages tailored for CBSE, ICSE, State Boards, Universities, and Corporate training centers.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Bundle 1 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-sky-500/50 transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-sky-500/20 text-sky-300 text-[11px] font-bold px-2.5 py-1 rounded-full">
+                                Package A
+                            </span>
+                            <span class="text-xs text-slate-400">Classroom Setup</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 font-display">Standard 40-Student Classroom</h3>
+                        <p class="text-xs text-slate-300 mb-6">Designed for schools, colleges, and coaching rooms needing durable, long-life furniture and display boards.</p>
+                        
+                        <div class="space-y-3 text-xs mb-6 border-y border-slate-700/80 py-4">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>20x Heavy-Duty Dual Student Desks & Benches</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>1x 8x4 Ft Premium Magnetic Ceramic Whiteboard</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>1x Teacher Table + Cushioned Visitor Chair</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>1x Green Pin-up Notice Board (4x3 Ft)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="requestBundleQuote('Standard 40-Student Classroom Bundle')" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <span>Inquire for This Package</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bundle 2 (Featured) -->
+                <div class="bg-gradient-to-b from-gem-950 via-slate-800 to-slate-900 border-2 border-amber-500/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between relative shadow-xl">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-[11px] font-black uppercase tracking-wider px-3.5 py-0.5 rounded-full shadow">
+                        Most Requested on GeM
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-4 mt-1">
+                            <span class="bg-amber-500/20 text-amber-300 text-[11px] font-bold px-2.5 py-1 rounded-full">
+                                Package B
+                            </span>
+                            <span class="text-xs text-amber-300 font-semibold">Turnkey Computer Lab</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 font-display">30-Seater Computer & Language Lab</h3>
+                        <p class="text-xs text-slate-300 mb-6">Complete hardware, cabling, networking and modular furniture setup for secondary schools and IT institutes.</p>
+                        
+                        <div class="space-y-3 text-xs mb-6 border-y border-slate-700/80 py-4">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-400"></i>
+                                <span>30x Ergonomic Mesh Adjustable Computer Chairs</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-400"></i>
+                                <span>15x Dual Computer Tables with CPU & Cable Trays</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-400"></i>
+                                <span>30x Core i5/Ryzen Desktops + Keyboard & Mouse</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-400"></i>
+                                <span>2x 3KVA Online Centralized UPS Backups</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-400"></i>
+                                <span>Full 24-Port Gigabit Switch & Cat6 Patch Setup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="requestBundleQuote('30-Seater Computer Lab Package')" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <span>Get Custom Lab BOQ & Pricing</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bundle 3 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-emerald-500/20 text-emerald-300 text-[11px] font-bold px-2.5 py-1 rounded-full">
+                                Package C
+                            </span>
+                            <span class="text-xs text-slate-400">Administrative Suite</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 font-display">Principal & Admin Office Setup</h3>
+                        <p class="text-xs text-slate-300 mb-6">Executive furniture, storage almirahs, multi-function laser printers, and conference room fixtures.</p>
+                        
+                        <div class="space-y-3 text-xs mb-6 border-y border-slate-700/80 py-4">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>1x Premium Executive Director Desk & High-back Chair</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>2x Steel Storage Almirahs (CRCA Sheet 18/20 Gauge)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>1x Heavy Duty Laser Duplex All-In-One Printer</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>6x Leatherette Visitor Chairs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="requestBundleQuote('Administrative Office Setup Package')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <span>Inquire for Admin Suite</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE KASHI TRADERS -->
+    <section id="why-us" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-gem-700 font-bold text-xs uppercase tracking-widest bg-gem-50 border border-gem-200 px-3 py-1 rounded-full">
+                    Built On Trust
+                </span>
+                <h2 class="text-3xl font-extrabold text-slate-900 font-display mt-3">
+                    Why Institutions Choose Kashi Traders
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    We bridge the gap between rigorous government procurement requirements and top-tier commercial equipment quality.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Advantage 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-gem-400 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gem-100 text-gem-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">100% GeM & Tax Compliant</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Registered with complete GSTIN, MSME Udyam, GeM OEM/reseller authorization, facilitating smooth audit clearance.
+                    </p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-gem-400 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">Transparent Bulk Rates</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Direct tie-ups with furniture manufacturers and IT peripheral brands allow us to offer lowest competitive quotes.
+                    </p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-gem-400 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">Installation & Unpacking</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        We don't just dump boxes; our technicians ensure proper assembly of tables, wall-mounting of whiteboards, and IT cable dress-up.
+                    </p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-gem-400 transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">OEM Warranty Assistance</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Full warranty backing on electronics, printers, and structural warranties on heavy steel and wooden institutional furniture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTELE & INSTITUTIONAL SECTORS -->
+    <section class="py-14 bg-slate-100/70 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs uppercase font-extrabold tracking-wider text-slate-500 mb-8">
+                Proudly Serving Reputed Institutions Across Sectors
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-slate-700 font-semibold text-xs flex flex-col items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-school text-xl text-sky-600"></i>
+                    <span>Schools & KVs</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-slate-700 font-semibold text-xs flex flex-col items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-graduation-cap text-xl text-amber-600"></i>
+                    <span>Degree Colleges</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-slate-700 font-semibold text-xs flex flex-col items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-microchip text-xl text-indigo-600"></i>
+                    <span>Polytechnic & ITIs</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-slate-700 font-semibold text-xs flex flex-col items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-building-columns text-xl text-emerald-600"></i>
+                    <span>Govt Departments</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-slate-700 font-semibold text-xs flex flex-col items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-book-open-reader text-xl text-purple-600"></i>
+                    <span>Coaching Institutes</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-slate-700 font-semibold text-xs flex flex-col items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-briefcase text-xl text-rose-600"></i>
+                    <span>Commercial Offices</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUEST FOR QUOTATION (RFQ) & CONTACT SECTION -->
+    <section id="rfq-form-section" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-gem-700 font-bold text-xs uppercase tracking-widest bg-gem-50 border border-gem-200 px-3 py-1 rounded-full">
+                            Get In Touch
+                        </span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 font-display mt-3">
+                            Connect with Kashi Traders
+                        </h2>
+                        <p class="text-slate-600 text-sm mt-2">
+                            Need an official quotation for your tender, a GeM catalog link, or wholesale delivery estimate? Our sales desk responds promptly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-gem-700 text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Head Office & Display Store</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">
+                                    Main Market Road, Near City Center, Varanasi / State Hub, Uttar Pradesh - 221001 (India)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Phone & WhatsApp Hotline</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">
+                                    Call: <a href="tel:+919876543210" class="text-gem-700 font-semibold hover:underline">+91 98765 43210</a> / <a href="tel:+919876543211" class="text-gem-700 font-semibold hover:underline">+91 98765 43211</a>
+                                </p>
+                                <p class="text-[11px] text-emerald-600 font-medium mt-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Instant Support: Mon - Sat (9:00 AM - 8:00 PM)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-sky-600 text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Official Tender & GeM Correspondence</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">
+                                    Email: <a href="mailto:kashitraders.gem@gmail.com" class="text-gem-700 font-semibold hover:underline">kashitraders.gem@gmail.com</a>
+                                </p>
+                                <p class="text-xs text-slate-600">
+                                    Sales: <a href="mailto:sales@kashitraders.com" class="text-gem-700 font-semibold hover:underline">sales@kashitraders.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-amber-50 border border-amber-200">
+                            <div class="w-10 h-10 rounded-lg bg-amber-600 text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Tax & Registration Identifiers</h4>
+                                <p class="text-xs text-slate-700 mt-0.5">
+                                    GSTIN: <span class="font-mono font-bold">09AAACK1234F1Z5</span><br>
+                                    GeM Seller ID: <span class="font-mono font-bold">KT-GEM-2024-X99</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive RFQ Form Column -->
+                <div class="lg:col-span-7" id="contact">
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-lg">
+                        <div class="border-b border-slate-100 pb-4 mb-6">
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Instant Request for Quotation (RFQ)</h3>
+                            <p class="text-xs text-slate-500 mt-1">Submit your requirement for fast pricing with GST breakdown, GeM availability, or custom delivery time.</p>
+                        </div>
+
+                        <form id="rfq-form" onsubmit="handleRFQSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Your Full Name *</label>
+                                    <input type="text" id="rfq-name" required placeholder="e.g. Rajesh Sharma" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Mobile / WhatsApp Number *</label>
+                                    <input type="tel" id="rfq-phone" required placeholder="e.g. 9876543210" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Organization / School / College</label>
+                                    <input type="text" id="rfq-org" placeholder="e.g. Modern Public School / Govt College" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Email Address</label>
+                                    <input type="email" id="rfq-email" placeholder="e.g. purchase@institution.edu" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Procurement Mode *</label>
+                                    <select id="rfq-mode" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none bg-white">
+                                        <option value="GeM Portal Purchase">GeM Portal Purchase (Direct / L1 / BOQ)</option>
+                                        <option value="Wholesale Bulk Supply">Wholesale Bulk Supply (Direct Invoice)</option>
+                                        <option value="Retail Walk-in / Single Unit">Retail / Walk-in / Single Unit</option>
+                                        <option value="Tender / Custom Bid Submission">Government Tender / Custom Bid</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Primary Product Interest *</label>
+                                    <select id="rfq-category" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none bg-white">
+                                        <option value="All Items / Mixed Lab Package">All Items / Mixed Lab Package</option>
+                                        <option value="Computer Peripherals & IT Hardware">Computer Peripherals & IT Hardware</option>
+                                        <option value="Classroom Whiteboards & Greenboards">Classroom Whiteboards & Greenboards</option>
+                                        <option value="Dual Desks & Computer Tables">Dual Desks & Computer Tables</option>
+                                        <option value="Chairs & Ergonomic Seating">Chairs & Ergonomic Seating</option>
+                                        <option value="Interactive Flat Panels / Smart Class">Interactive Flat Panels / Smart Class</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Items Needed & Quantity Details *</label>
+                                <textarea id="rfq-details" rows="3" required placeholder="Specify items (e.g. 50 Dual Desks, 5 Magnetic Whiteboards 6x4, 30 Optical Mice) or tender specification requirements..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gem-600 focus:ring-2 focus:ring-gem-100 text-sm outline-none"></textarea>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                                <button type="submit" class="flex-1 bg-gradient-to-r from-gem-700 to-gem-900 hover:from-gem-800 hover:to-slate-900 text-white font-bold py-3 px-6 rounded-xl text-sm transition shadow-md flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane text-amber-400"></i>
+                                    <span>Submit RFQ Form</span>
+                                </button>
+                                <button type="button" onclick="sendViaWhatsApp()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition shadow-md flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>Instant Send to WhatsApp</span>
+                                </button>
+                            </div>
+                            <p class="text-[11px] text-slate-400 text-center">
+                                Your information is confidential. We will immediately review your requirement and share the best quote.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Col 1: Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gem-700 text-white flex items-center justify-center font-bold text-xl">
+                            KT
+                        </div>
+                        <span class="text-xl font-black font-display text-white tracking-tight">KASHI TRADERS</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Premier GeM portal registered merchant, wholesale distributor, and retail stockist of educational furniture, computer peripherals, presentation boards, and campus lab infrastructure.
+                    </p>
+                    <div class="flex items-center gap-3 pt-1">
+                        <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800/80 px-2.5 py-1 rounded">
+                            <i class="fa-solid fa-circle-check mr-1"></i> GeM Verified Reseller
+                        </span>
+                        <span class="text-xs font-semibold text-amber-400 bg-amber-950/60 border border-amber-800/80 px-2.5 py-1 rounded">
+                            <i class="fa-solid fa-file-shield mr-1"></i> GST Registered
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Fast Categories -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Product Verticals</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#catalog" onclick="filterCatalog('computers')" class="hover:text-white transition">Computer Peripherals</a></li>
+                        <li><a href="#catalog" onclick="filterCatalog('boards')" class="hover:text-white transition">Classroom Whiteboards</a></li>
+                        <li><a href="#catalog" onclick="filterCatalog('tables')" class="hover:text-white transition">Dual Student Desks</a></li>
+                        <li><a href="#catalog" onclick="filterCatalog('chairs')" class="hover:text-white transition">Ergonomic Mesh Chairs</a></li>
+                        <li><a href="#catalog" onclick="filterCatalog('smart-class')" class="hover:text-white transition">Interactive Smart Panels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Procurement Channels -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Procurement</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#gem-section" class="hover:text-white transition">GeM Direct Purchase</a></li>
+                        <li><a href="#gem-section" class="hover:text-white transition">L-1 Bid Matching</a></li>
+                        <li><a href="#rfq-form-section" class="hover:text-white transition">Custom BOQ & Tender</a></li>
+                        <li><a href="#bundles" class="hover:text-white transition">Classroom Setup Bundles</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Retail Store Counter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Quick Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Direct Contact</h4>
+                    <p class="text-xs text-slate-300 mb-1"><strong>Phone:</strong> +91 98765 43210</p>
+                    <p class="text-xs text-slate-300 mb-1"><strong>WhatsApp:</strong> +91 98765 43210</p>
+                    <p class="text-xs text-slate-300 mb-2"><strong>Email:</strong> kashitraders.gem@gmail.com</p>
+                    <button onclick="openGeMModal()" class="text-xs text-amber-400 hover:text-amber-300 font-bold underline">
+                        View GeM & GST Certificate
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Disclaimer & Copyright -->
+            <div class="border-t border-slate-800 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© 2026 Kashi Traders. All rights reserved. Registered on Government e-Marketplace (GeM).</p>
+                <p class="flex items-center gap-3">
+                    <span>Designed for GitHub Pages</span>
+                    <span>•</span>
+                    <span>Zero Build Step</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OVER RFQ DRAWER (Dynamic Quote Basket) -->
+    <div id="rfq-drawer" class="fixed inset-0 z-50 overflow-hidden pointer-events-none transition-all duration-300 opacity-0 invisible">
+        <!-- Backdrop -->
+        <div id="rfq-drawer-backdrop" onclick="closeRFQDrawer()" class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"></div>
+
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10 pointer-events-auto">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                <!-- Drawer Header -->
+                <div class="p-5 bg-slate-900 text-white flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-list text-amber-400 text-lg"></i>
+                        <div>
+                            <h3 class="font-bold text-base leading-tight">Quote Request Basket</h3>
+                            <p class="text-[11px] text-slate-300"><span id="drawer-item-count">0</span> items selected for quotation</p>
+                        </div>
+                    </div>
+                    <button onclick="closeRFQDrawer()" class="text-slate-400 hover:text-white p-1 rounded-lg">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Drawer Content -->
+                <div id="drawer-items-container" class="flex-1 overflow-y-auto p-5 space-y-4 divide-y divide-slate-100">
+                    <!-- Dynamic cart items will render here -->
+                </div>
+
+                <!-- Empty Drawer Message -->
+                <div id="drawer-empty" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center text-slate-400">
+                    <div class="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-slate-400 mb-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                    <h4 class="text-slate-700 font-bold text-sm">Your quote basket is empty</h4>
+                    <p class="text-xs text-slate-500 mt-1 max-w-xs">Click "Add to Quote" on any product from the catalog to build your custom institutional requirement.</p>
+                </div>
+
+                <!-- Drawer Footer Actions -->
+                <div id="drawer-footer" class="p-5 bg-slate-50 border-t border-slate-200 space-y-3">
+                    <div class="flex justify-between items-center text-xs font-semibold text-slate-700">
+                        <span>Items in Inquirer:</span>
+                        <span id="drawer-total-qty" class="text-slate-900 font-bold">0 units</span>
+                    </div>
+
+                    <button onclick="sendCartToWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Send Quote List to WhatsApp</span>
+                    </button>
+
+                    <button onclick="fillFormFromCart()" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-semibold py-2.5 px-4 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-file-lines text-amber-400"></i>
+                        <span>Auto-fill into RFQ Form</span>
+                    </button>
+
+                    <button onclick="clearCart()" class="w-full text-slate-400 hover:text-red-500 text-xs font-medium py-1 transition text-center">
+                        Clear all selected items
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GeM VENDOR CREDENTIALS MODAL -->
+    <div id="gem-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm hidden transition-all">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200">
+            <div class="bg-gradient-to-r from-gem-800 to-slate-900 text-white p-6 relative">
+                <button onclick="closeGeMModal()" class="absolute top-4 right-4 text-slate-300 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2">
+                    <i class="fa-solid fa-shield-halved"></i> Verified GeM Seller Profile
+                </div>
+                <h3 class="text-xl font-bold font-display">Kashi Traders GeM Verification</h3>
+                <p class="text-xs text-slate-300 mt-1">Official credentials for Government Officers & Institutional Buyers</p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs text-slate-700">
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center">
+                    <span class="font-semibold text-slate-500">Business / Entity Name:</span>
+                    <span class="font-bold text-slate-900">KASHI TRADERS</span>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center">
+                    <span class="font-semibold text-slate-500">GeM Vendor Code / ID:</span>
+                    <div class="flex items-center gap-2">
+                        <span class="font-mono font-bold text-gem-700">KT-GEM-2024-X99</span>
+                        <button onclick="copyToClipboard('KT-GEM-2024-X99')" class="text-slate-400 hover:text-gem-700" title="Copy">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center">
+                    <span class="font-semibold text-slate-500">GST Registration Number:</span>
+                    <div class="flex items-center gap-2">
+                        <span class="font-mono font-bold text-slate-900">09AAACK1234F1Z5</span>
+                        <button onclick="copyToClipboard('09AAACK1234F1Z5')" class="text-slate-400 hover:text-gem-700" title="Copy">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center">
+                    <span class="font-semibold text-slate-500">MSME Udyam:</span>
+                    <span class="font-mono font-bold text-slate-900">UDYAM-UP-75-0012345</span>
+                </div>
+
+                <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 text-emerald-800">
+                    <p class="font-semibold">Procurement Assistance Available:</p>
+                    <p class="text-[11px] mt-1 text-emerald-700">
+                        Need us to map specific models to your GeM cart or tender notice? Call our designated GeM nodal executive at <strong>+91 98765 43210</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-4 bg-slate-100 border-t border-slate-200 flex justify-end gap-3">
+                <button onclick="closeGeMModal()" class="px-4 py-2 rounded-lg text-slate-600 font-semibold hover:bg-slate-200 transition">
+                    Close
+                </button>
+                <a href="https://wa.me/919876543210?text=Hello%20Kashi%20Traders,%20please%20send%20your%20GeM%20seller%20catalog%20and%20OEM%20authorization%20certificates" target="_blank" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold flex items-center gap-1.5 transition">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Request GeM Documents</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
