@@ -5,10 +5,23 @@
 'use strict';
 
 // ── Preloader ──────────────────────────────────────────────────────
-window.addEventListener('load', () => {
+// Use DOMContentLoaded (fires before images/fonts) so the preloader
+// never blocks on slow CDN resources (Google Fonts, Font Awesome).
+function hidePreloader() {
   const preloader = document.getElementById('preloader');
-  setTimeout(() => preloader.classList.add('hidden'), 600);
-});
+  if (preloader) {
+    preloader.classList.add('hidden');
+    // Remove from DOM after transition ends to free memory
+    preloader.addEventListener('transitionend', () => preloader.remove(), { once: true });
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => setTimeout(hidePreloader, 300));
+} else {
+  // DOM already ready (script deferred and loaded after parse)
+  setTimeout(hidePreloader, 300);
+}
 
 // ── Navbar scroll behaviour ────────────────────────────────────────
 const navbar = document.getElementById('navbar');

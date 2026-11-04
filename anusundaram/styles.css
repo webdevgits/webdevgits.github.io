@@ -45,14 +45,23 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
 
 /* ===== PRELOADER ===== */
+/* CSS fallback: auto-hide after 3 s even if JS never runs */
+@keyframes autoHide {
+  0%   { opacity: 1; visibility: visible; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
 #preloader {
   position: fixed; inset: 0;
   background: var(--dark);
   display: flex; align-items: center; justify-content: center;
   z-index: 9999;
   transition: opacity .5s ease, visibility .5s ease;
+  /* Fallback: vanish after 3 s via pure CSS */
+  animation: autoHide 0.5s ease 3s both;
 }
-#preloader.hidden { opacity: 0; visibility: hidden; }
+#preloader.hidden { opacity: 0; visibility: hidden; animation: none; }
 
 .preloader-inner { text-align: center; }
 
